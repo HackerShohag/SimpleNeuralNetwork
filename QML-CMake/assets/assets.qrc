@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>icons/neuralnet_icon.png</file>
+    </qresource>
+    <qresource prefix="/assets">
+        <file>images/neural_net.png</file>
+        <file>images/clean_my_mac.png</file>
+    </qresource>
+</RCC>
