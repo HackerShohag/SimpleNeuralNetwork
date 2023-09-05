@@ -54,7 +54,7 @@ else()
 endif()
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Core Layer NeuralNetwork)
-target_include_directories(${PROJECT_NAME} PUBLIC src/NeuralNetwork)
+target_include_directories(${PROJECT_NAME} PUBLIC src/NeuralNetworkQt/NeuralNetwork src/NeuralNetworkQt/Layer)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

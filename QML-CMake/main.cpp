@@ -5,13 +5,17 @@
 #include <QWindow>
 #include <QQmlContext>
 #include <QRect>
+#include <QApplication>
+
+#include "NeuralNetwork"
 
 int main(int argc, char *argv[])
 {
+    NeuralNetwork network({2, 7, 5});
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/MainPage.qml"));

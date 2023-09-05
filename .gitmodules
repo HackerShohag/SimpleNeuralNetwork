@@ -1,0 +1,6 @@
+[submodule "QWidget-CMake/src/NeuralNetworkQt"]
+	path = QWidget-CMake/src/NeuralNetworkQt
+	url = git@github.com:HackerShohag/NeuralNetworkQt.git
+[submodule "QML-CMake/src/NeuralNetworkQt"]
+	path = QML-CMake/src/NeuralNetworkQt
+	url = git@github.com:HackerShohag/NeuralNetworkQt.git

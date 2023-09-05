@@ -1,2 +1,2 @@
-add_subdirectory(NeuralNetwork)
-add_subdirectory(Layer)
+add_subdirectory(NeuralNetworkQt/NeuralNetwork)
+add_subdirectory(NeuralNetworkQt/Layer)

@@ -4,5 +4,8 @@
         <file>Buttons/OverlayButton.qml</file>
         <file>Buttons/ActionButton.qml</file>
         <file>Buttons/InfoButton.qml</file>
+        <file>utils.js</file>
+        <file>data/safe.js</file>
+        <file>data/poison.js</file>
     </qresource>
 </RCC>
