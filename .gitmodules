@@ -4,3 +4,6 @@
 [submodule "QML-CMake/src/NeuralNetworkQt"]
 	path = QML-CMake/src/NeuralNetworkQt
 	url = git@github.com:HackerShohag/NeuralNetworkQt.git
+[submodule "QML-CMake/plugins/FloatUI"]
+	path = QML-CMake/plugins/FloatUI
+	url = git@github.com:HackerShohag/FloatUI.git

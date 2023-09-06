@@ -14,30 +14,26 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
-
-#include <QMainWindow>
-#include <NeuralNetwork>
-
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
-{
-    Q_OBJECT
-
-public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-
-private slots:
-    void on_convertButton_clicked();
-    void on_inputText_returnPressed();
-
-private:
-    Ui::MainWindow *ui;
-    NeuralNetwork *network;
-};
-#endif // MAINWINDOW_H
+var poison = {
+    "2": 26,
+    "11": 2,
+    "13": 22,
+    "4": 20,
+    "3": 23,
+    "9": 19,
+    "0": 3,
+    "10": 22,
+    "17": 4,
+    "18": 6,
+    "5": 10,
+    "14": 2,
+    "6": 25,
+    "16": 19,
+    "7": 2,
+    "26": 1,
+    "20": 10,
+    "21": 14,
+    "12": 9,
+    "23": 1,
+    "1": 21
+}

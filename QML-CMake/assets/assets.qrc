@@ -5,5 +5,7 @@
     <qresource prefix="/assets">
         <file>images/neural_net.png</file>
         <file>images/clean_my_mac.png</file>
+        <file>data/safe.js</file>
+        <file>data/poison.js</file>
     </qresource>
 </RCC>

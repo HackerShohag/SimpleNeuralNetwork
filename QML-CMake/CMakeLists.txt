@@ -13,6 +13,7 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick Widgets)
 
 add_subdirectory(src)
+add_subdirectory(plugins)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -45,7 +46,7 @@ else()
 endif()
 
 target_link_libraries(NeuralNet
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::Widgets NeuralNetwork Layer)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::Widgets NeuralNetwork Layer FloatUIplugin)
 
 target_include_directories(NeuralNet PUBLIC src/NeuralNetworkQt/NeuralNetwork src/NeuralNetworkQt/Layer)
 
