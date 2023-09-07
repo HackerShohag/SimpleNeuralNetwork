@@ -46,7 +46,7 @@ else()
 endif()
 
 target_link_libraries(NeuralNet
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::Widgets NeuralNetwork Layer FloatUIplugin)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::Widgets NeuralNetwork Layer FloatUI)
 
 target_include_directories(NeuralNet PUBLIC src/NeuralNetworkQt/NeuralNetwork src/NeuralNetworkQt/Layer)
 

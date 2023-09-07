@@ -16,11 +16,9 @@
 
 import QtQuick
 import QtCharts
-
 import FloatUI
 
-//import "data/safe.js" as Safe
-//import "data/poison.js" as Poison
+import "utils.js" as Utils
 
 FloatWindow {
     id : mainWindow
@@ -48,6 +46,8 @@ FloatWindow {
             title: "Graph"
             anchors.centerIn: parent
             antialiasing: true
+
+            backgroundColor: Utils.shadeColor(selectedColor, 20)
 
             height: 500
             width: 700
