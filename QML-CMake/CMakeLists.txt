@@ -17,6 +17,9 @@ add_subdirectory(plugins)
 
 set(PROJECT_SOURCES
         main.cpp
+        src/poisonousfooddetector.h
+        src/poisonousfooddetector.cpp
+        src/utils/desktopbackgroundfetcher.h
         src/utils/desktopbackgroundfetcher.cpp
         qml/qml.qrc
         assets/assets.qrc

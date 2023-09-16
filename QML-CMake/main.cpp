@@ -23,11 +23,38 @@
 #include <QRect>
 #include <QApplication>
 
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
+
 #include "NeuralNetwork"
+
+QJsonObject readJson(QString FileName)
+{
+    QString val;
+    QFile file;
+    file.setFileName(FileName);
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        val = file.readAll();
+        file.close();
+        QJsonDocument d = QJsonDocument::fromJson(val.toUtf8());
+        return d.object();
+    }
+    return QJsonObject();
+}
+
+void FoodDetector()
+{
+    NeuralNetwork network({2, 7, 5});
+
+    NeuralNetwork::DataPoint data;
+//    network.Learn();
+}
 
 int main(int argc, char *argv[])
 {
-    NeuralNetwork network({2, 7, 5});
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif

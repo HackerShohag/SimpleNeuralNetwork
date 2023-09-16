@@ -14,26 +14,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-var poison = {
-    "2": 26,
-    "11": 2,
-    "13": 22,
-    "4": 20,
-    "3": 23,
-    "9": 19,
-    "0": 3,
-    "10": 22,
-    "17": 4,
-    "18": 6,
-    "5": 10,
-    "14": 2,
-    "6": 25,
-    "16": 19,
-    "7": 2,
-    "26": 1,
-    "20": 10,
-    "21": 14,
-    "12": 9,
-    "23": 1,
-    "1": 21
+#include "poisonousfooddetector.h"
+
+PoisonousFoodDetector::PoisonousFoodDetector()
+{
+
 }
